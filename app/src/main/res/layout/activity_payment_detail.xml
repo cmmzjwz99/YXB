@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_bar"
+            android:layout_margin="@dimen/spacing_5">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:text="@string/have_card"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_have_card"
+                style="@style/text_style8"
+                android:layout_toRightOf="@+id/tv1"
+                android:text="@string/zhangsan"
+                android:textColor="@color/gray_999" />
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv1"
+                android:text="@string/bank_no"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_bank_no"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_have_card"
+                android:layout_toRightOf="@+id/tv2"
+                android:text="@string/bank_card_no"
+                android:textColor="@color/gray_999" />
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv2"
+                android:text="@string/payment_lines"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_payment_lines"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_bank_no"
+                android:layout_toRightOf="@+id/tv3"
+                android:text="@string/money"
+                android:textColor="@color/gray_999" />
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv3"
+                android:text="@string/available_lines"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_available_lines"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_payment_lines"
+                android:layout_toRightOf="@+id/tv4"
+                android:text="@string/money"
+                android:textColor="@color/gray_999" />
+
+            <TextView
+                android:id="@+id/tv5"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv4"
+                android:text="@string/deal_number"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_deal_number"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_available_lines"
+                android:layout_toRightOf="@+id/tv5"
+                android:text="2"
+                android:textColor="@color/gray_999" />
+
+            <TextView
+                android:id="@+id/tv6"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv5"
+                android:text="@string/start_time"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_deal_number"
+                android:layout_toRightOf="@+id/tv6"
+                android:text="@string/time"
+                android:textColor="@color/gray_999" />
+
+            <TextView
+                android:id="@+id/tv7"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv6"
+                android:text="@string/pay_time"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_pay_time"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_start_time"
+                android:layout_toRightOf="@+id/tv7"
+                android:text="@string/bank_card_no"
+                android:textColor="@color/gray_999" />
+
+            <TextView
+                android:id="@+id/tv8"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv7"
+                android:text="@string/deal_all"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_deal_all"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_pay_time"
+                android:layout_toRightOf="@+id/tv8"
+                android:text="6"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv9"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv8"
+                android:text="@string/payment_number"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_payment_number"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_deal_all"
+                android:layout_toRightOf="@+id/tv9"
+                android:text="6"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv10"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv9"
+                android:text="@string/tv_fees"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_fees"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_payment_number"
+                android:layout_toRightOf="@+id/tv10"
+                android:text="@string/money"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv11"
+                style="@style/text_style4"
+                android:layout_width="100dp"
+                android:layout_below="@+id/tv10"
+                android:text="@string/all_fees"
+                android:textColor="@color/gray_666" />
+
+            <TextView
+                android:id="@+id/tv_all_fees"
+                style="@style/text_style8"
+                android:layout_below="@+id/tv_fees"
+                android:layout_toRightOf="@+id/tv11"
+                android:text="@string/tv_all_fees"
+                android:textColor="@color/red" />
+
+        </RelativeLayout>
+
+        <com.cmm.zjwz.custom.NoScrollListView
+            android:id="@+id/lv_payment_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/spacing_10"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</ScrollView>

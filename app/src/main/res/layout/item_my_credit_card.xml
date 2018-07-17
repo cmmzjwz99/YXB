@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_item_credit_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bt_confrim_bg_round"
+        android:layout_marginTop="@dimen/spacing_5">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_mine"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/spacing_20"/>
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_user"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zhangsan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_modify"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:paddingLeft="@dimen/spacing_10"
+                    android:paddingRight="@dimen/spacing_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modify"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/spacing_10"
+                    android:background="@drawable/bt_border_bg_round"/>
+
+                <TextView
+                    android:id="@+id/tv_unbind"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:paddingLeft="@dimen/spacing_10"
+                    android:paddingRight="@dimen/spacing_10"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:layout_below="@+id/tv_modify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unbind"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/spacing_10"
+                    android:background="@drawable/bt_border_bg_round"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_payment_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_list"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/title_blue"
+                android:paddingRight="@dimen/spacing_15"
+                android:paddingLeft="@dimen/spacing_15"
+                android:paddingBottom="@dimen/spacing_5"
+                android:paddingTop="@dimen/spacing_5"
+                android:background="@drawable/bt_edit_bg_round"
+                android:layout_marginLeft="@dimen/spacing_20"
+                android:layout_marginBottom="@dimen/spacing_10"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent" >
+
+           <TextView
+               android:id="@+id/tv_bank_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/ping_an"
+               android:textSize="@dimen/text_size_16"
+               android:textColor="@color/white"
+               android:layout_marginTop="@dimen/spacing_15"
+               android:layout_marginLeft="@dimen/spacing_20"
+               android:layout_marginBottom="@dimen/spacing_10"/>
+
+           <TextView
+               android:id="@+id/tv1"
+               android:layout_below="@+id/tv_bank_name"
+               android:text="@string/card_no"
+               style="@style/text_style6"/>
+
+           <TextView
+               android:id="@+id/tv_bank_no"
+               android:layout_toRightOf="@+id/tv1"
+               android:layout_below="@+id/tv_bank_name"
+               android:text="@string/bank_card_no"
+               style="@style/text_style7"/>
+
+           <TextView
+               android:id="@+id/tv2"
+               android:layout_below="@+id/tv_bank_no"
+               android:text="C  V  V"
+               style="@style/text_style6"/>
+
+           <TextView
+               android:id="@+id/tv_cvv"
+               android:layout_toRightOf="@+id/tv2"
+               android:layout_below="@+id/tv_bank_no"
+               android:text="@string/bank_card_no"
+               style="@style/text_style7"/>
+
+           <TextView
+               android:id="@+id/tv3"
+               android:layout_below="@+id/tv2"
+               android:text="@string/period_validity"
+               style="@style/text_style6"/>
+
+           <TextView
+               android:id="@+id/tv_period_validity"
+               android:layout_toRightOf="@+id/tv3"
+               android:layout_below="@+id/tv_cvv"
+               android:text="@string/et_bill_day"
+               style="@style/text_style7"/>
+
+           <TextView
+               android:id="@+id/tv4"
+               android:layout_below="@+id/tv3"
+               android:text="@string/bill_day"
+               style="@style/text_style6"/>
+
+           <TextView
+               android:id="@+id/tv_bill_day"
+               android:layout_toRightOf="@+id/tv4"
+               android:layout_below="@+id/tv_period_validity"
+               android:text="@string/bill_day"
+               style="@style/text_style7"/>
+
+           <TextView
+               android:id="@+id/tv5"
+               android:layout_below="@+id/tv4"
+               android:text="@string/payment_day"
+               style="@style/text_style6"/>
+
+           <TextView
+               android:id="@+id/tv_payment_day"
+               android:layout_toRightOf="@+id/tv5"
+               android:layout_below="@+id/tv_bill_day"
+               android:text="@string/bill_day"
+               style="@style/text_style7"/>
+
+
+           <TextView
+               android:id="@+id/tv_new_create"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/new_create"
+               android:textSize="@dimen/text_size_14"
+               android:textColor="@color/title_blue"
+               android:paddingRight="@dimen/spacing_15"
+               android:paddingLeft="@dimen/spacing_15"
+               android:paddingBottom="@dimen/spacing_5"
+               android:paddingTop="@dimen/spacing_5"
+               android:background="@drawable/bt_edit_bg_round"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginRight="@dimen/spacing_20"
+               android:layout_marginBottom="@dimen/spacing_10"/>
+
+       </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

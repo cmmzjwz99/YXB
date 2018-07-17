@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/ll_choose_credit_card_popwindow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bg_white_r7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_choose_credit_card"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/title_blue"
+            android:gravity="center_horizontal"
+            android:layout_margin="@dimen/spacing_10"/>
+
+        <!--<com.cmm.zjwz.custom.NoScrollListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:id="@+id/lv_credit_card"/>-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rv_credit_card"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:overScrollMode="never"-->
+            <!--android:choiceMode="singleChoice"/>-->
+
+        <ListView
+            android:id="@+id/lv_credit_card_check"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_choose_confirm"
+            style="@style/bt_confirm_style"/>
+    </LinearLayout>
+
+
+</LinearLayout>

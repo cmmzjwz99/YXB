@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">养信宝</string>
+    <string name="capacity_repayment">智能还款</string>
+    <string name="cashier">快捷收银</string>
+    <string name="notice">通知</string>
+    <string name="phone">手机号</string>
+    <string name="edit_phone">请输入手机号码</string>
+    <string name="edit_password">请输入密码</string>
+
+    <string name="edit_six_password">请输入至少6位密码</string>
+    <string name="edit_confirm_password">请确认密码</string>
+    <string name="code">验证码</string>
+    <string name="edit_code">请输入验证码</string>
+
+    <string name="bt_login">登 录</string>
+    <string name="bt_regist">注 册</string>
+    <string name="bt_back">返回</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="copy_right">CopyRight  2018  养信宝</string>
+    <string name="read_agreed">阅读并同意养信宝</string>
+    <string name="agreement">《用户协议》</string>
+    
+    <string name="gather_name">收 款 人</string>
+    <string name="edit_gather_name">请输入收款人姓名</string>
+    <string name="id_card">身份证号</string>
+    <string name="edit_id_card_no">请输入身份证号码</string>
+    <string name="bank">开 户 行</string>
+    <string name="bank_name">请选择开户行</string>
+    <string name="bank_no">银行卡号</string>
+    <string name="edit_bank_no">请输入储蓄卡卡号</string>
+    <string name="reserved_phone">手 机 号</string>
+    <string name="edit_reserved_phone">请输入预留手机号</string>
+    <string name="bt_confirm">确 定</string>
+    <string name="edit_lines">请输入收款金额:</string>
+    <string name="have_card">持 卡 人</string>
+    <string name="edit_have_card">请输入持卡人姓名</string>
+    <string name="cashier_record">收银记录</string>
+
+    <string name="tv_lines">交易金额</string>
+    <string name="tv_fees">手续费</string>
+    <string name="tv_reality_lines">到账金额</string>
+    <string name="tv_time">交易时间</string>
+    <string name="tv_type">交易类型</string>
+    <string name="tv_status">交易状态</string>
+    <string name="order_line">订单金额:</string>
+    <string name="choose_bank_card">请选择支付信用卡:</string>
+    <string name="add_new_bank_card">＋ 添加新的银行卡</string>
+    <string name="not_bind_card">未绑定信用卡</string>
+    <string name="bind_card">前去绑定</string>
+    <string name="settlement_bank">结算银行卡</string>
+    <string name="notes">注：交易后金额直接进入结算银行卡</string>
+    <string name="ping_an">平安银行</string>
+    <string name="bank_card_no">121313xxx2334</string>
+    <string name="choose_credit_card">＋ 选择信用卡</string>
+
+    <string name="cashier_choose">收款方式</string>
+    <string name="item_name">通道名称</string>
+    <string name="item_type">结算方式</string>
+    <string name="item_fees">费率</string>
+    <string name="item_lines">单笔限额</string>
+    <string name="dialog_choose_credit_card">选择信用卡</string>
+    <string name="anthorization">还款授权</string>
+    <string name="bill_day">账单日</string>
+    <string name="et_bill_day">0606</string>
+    <string name="payment_day">还款日</string>
+    <string name="cvv">卡片背面三位数</string>
+    <string name="period_validity">有效期</string>
+    <string name="zhangsan">张三</string>
+    <string name="modify">修改</string>
+    <string name="unbind">解绑</string>
+    <string name="payment_list">还款列表</string>
+    <string name="card_no">卡  号</string>
+    <string name="new_create">新建计划</string>
+    <string name="new_payment_create">新建还款计划</string>
+    <string name="modify_info">修改信息</string>
+    
+    <string name="deal_number">每日交易数</string>
+    <string name="et_deal_number">请输入每日交易笔数</string>
+    <string name="deal_all">总交易笔数</string>
+    <string name="payment_lines">还款金额</string>
+    <string name="et_payment_lines">请输入还款计划金额</string>
+    <string name="available_lines">可用金额</string>
+    <string name="et_available_lines">不低于还款金额的5%</string>
+    <string name="start_time">开始日期</string>
+    <string name="pay_time">还清日期</string>
+    <string name="create_time">创建日期</string>
+    <string name="stop_time">结束日期</string>
+    <string name="query_more">查看更多</string>
+    <string name="money">3000.00</string>
+    <string name="time">2018-06-16</string>
+    <string name="payment_number">还款总笔数</string>
+    <string name="all_fees">综合费率</string>
+    <string name="tv_all_fees">0.5%</string>
+    <string name="deal">交易</string>
+</resources>

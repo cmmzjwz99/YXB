@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/activity_payment">
+
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.cmm.zjwz.custom.NoScrollListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lv_payment"
+                android:layout_marginTop="@dimen/spacing_10"/>
+
+            <TextView
+                android:id="@+id/tv_choose_credit_card"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bt_edit_bg_round2"
+                android:layout_margin="40dp"
+                android:text="@string/choose_credit_card"
+                android:gravity="center"
+                android:textColor="@color/gray_666"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

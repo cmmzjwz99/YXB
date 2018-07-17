@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">养信宝</string>
+    <string name="camera_gallery">相机</string>
+    <string name="connect_service_fail">连接服务器失败，请检查网络或稍后重试</string>
+
+
+    <!--极光推送-->
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="low_press">低首付系列</string>
+    <string name="low_press_title">超低首付 超低月供</string>
+    <string name="performance">高性能系列</string>
+    <string name="performance_title">超高性能 随心所欲</string>
+    <string name="edit_phone">请输入手机号码</string>
+</resources>

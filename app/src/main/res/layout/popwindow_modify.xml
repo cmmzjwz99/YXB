@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bg_white_r7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_10"
+            android:gravity="center_horizontal"
+            android:text="@string/modify_info"
+            android:textColor="@color/title_blue"
+            android:textSize="@dimen/text_size_18" />
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="@string/bill_day" />
+
+            <EditText
+                android:id="@+id/et_bill_day"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv1"
+                android:hint="@string/et_bill_day"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="@string/payment_day" />
+
+            <EditText
+                android:id="@+id/et_payment_day"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv2"
+                android:hint="@string/et_bill_day"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="CVV" />
+
+            <EditText
+                android:id="@+id/et_cvv"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv3"
+                android:hint="@string/cvv"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="@string/period_validity" />
+
+            <EditText
+                android:id="@+id/et_period_validity"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv4"
+                android:hint="@string/et_bill_day"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_modify_confirm"
+            style="@style/bt_confirm_style"/>
+    </LinearLayout>
+
+
+</LinearLayout>

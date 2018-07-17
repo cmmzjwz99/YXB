@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bg_white_r7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_10"
+            android:gravity="center_horizontal"
+            android:text="@string/new_payment_create"
+            android:textColor="@color/title_blue"
+            android:textSize="@dimen/text_size_18" />
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="100dp"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="@string/payment_lines" />
+
+            <EditText
+                android:id="@+id/et_payment_lines"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv1"
+                android:hint="@string/et_payment_lines"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="100dp"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="@string/available_lines" />
+
+            <EditText
+                android:id="@+id/et_available_lines"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv2"
+                android:hint="@string/et_available_lines"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="100dp"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="@string/deal_number" />
+
+            <EditText
+                android:id="@+id/et_deal_number"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv3"
+                android:hint="@string/et_deal_number"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="100dp"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="@string/start_time" />
+
+            <EditText
+                android:id="@+id/et_start_time"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv4"
+                android:hint="@string/et_bill_day"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/relative_layout_dialog">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="100dp"
+                style="@style/text_style2"
+                android:paddingLeft="@dimen/spacing_20"
+                android:text="@string/stop_time" />
+
+            <EditText
+                android:id="@+id/et_stop_time"
+                style="@style/edit_style2"
+                android:layout_toRightOf="@+id/tv5"
+                android:hint="@string/et_bill_day"
+                android:maxLength="20" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_new_credit_confirm"
+            style="@style/bt_confirm_style" />
+    </LinearLayout>
+
+
+</LinearLayout>

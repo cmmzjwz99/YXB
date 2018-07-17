@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <TextView
+        android:id="@+id/tv1"
+        android:text="@string/tv_lines"
+        style="@style/text_style4"
+        android:textColor="@color/gray_999"/>
+
+    <TextView
+        android:id="@+id/tv_lines"
+        android:text=""
+        style="@style/text_style5"
+        android:textColor="@color/gray_999" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_below="@+id/tv1"
+        android:text="@string/tv_fees"
+        style="@style/text_style4"
+        android:textColor="@color/gray_999"/>
+
+    <TextView
+        android:id="@+id/tv_fees"
+        android:layout_below="@+id/tv_lines"
+        android:text=""
+        style="@style/text_style5"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_below="@+id/tv2"
+        android:text="@string/tv_reality_lines"
+        style="@style/text_style4"
+        android:textColor="@color/gray_999"/>
+
+    <TextView
+        android:id="@+id/tv_reality_lines"
+        android:layout_below="@+id/tv_fees"
+        android:text=""
+        style="@style/text_style5"
+        android:textColor="@color/tv_yellow" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_below="@+id/tv3"
+        android:text="@string/tv_time"
+        style="@style/text_style4"
+        android:textColor="@color/gray_999"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_below="@+id/tv_reality_lines"
+        android:text=""
+        style="@style/text_style5"
+        android:textColor="@color/gray_999" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_below="@+id/tv4"
+        android:text="@string/tv_type"
+        style="@style/text_style4"
+        android:textColor="@color/gray_333"/>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_below="@+id/tv_time"
+        android:text=""
+        style="@style/text_style5"
+        android:textColor="@color/gray_999" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_below="@+id/tv5"
+        android:text="@string/tv_status"
+        style="@style/text_style4"
+        android:textColor="@color/gray_333"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_below="@+id/tv_type"
+        android:text=""
+        style="@style/text_style5"
+        android:textColor="@color/gray_999" />
+    
+
+</RelativeLayout>

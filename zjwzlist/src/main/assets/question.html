@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <title>帮助中心</title>
+    <style>
+        .question{
+            border-bottom: 1px solid #eaeaea;
+            padding-left: 10px;
+            line-height: 40px;
+        }
+        .answer{
+            background-color: #eaeaea;
+            padding-left: 20px;
+            line-height: 30px;
+            color: #b4b4b4;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body style="margin: 0;padding: 0;background-color: #eaeaea">
+    <div style="background-color: white;margin-top: 10px;color: #979797">
+        <div style="color: #4cffb6;height: 45px;line-height: 45px;padding-left: 10px;font-size: 20px">新手问题</div>
+        <div class="question" onclick="showas('as1')">1.如何在新口子汇开始借款？</div>
+        <div class="answer" id="as1" style="display: none">注册➡选择贷款产品➡下载app➡填写资料➡提交审核➡通过下款</div>
+        <div class="question" onclick="showas('as2')">2.申请借贷的基本要求是什么？</div>
+        <div class="answer" id="as2" style="display: none">1.年龄18-45岁（具体视小贷公司情况而定）<br>
+            2.具有稳定的工作与收入。<br>
+            3.征信良好。<br>
+        </div>
+        <div class="question" onclick="showas('as3')">3.网上申请借款，审核的时间一般是多久？</div>
+        <div class="answer" id="as3" style="display: none">1-3天，最快当天通过，具体视小贷公司情况而定。</div>
+        <div class="question" onclick="showas('as4')">4.电话审核一般核实哪些问题？</div>
+        <div class="answer" id="as4" style="display: none">1.姓名与身份证<br>
+            2.工作信息<br>
+            3.借款用途<br>
+            4.填写的其他材料</div>
+        <div class="question" onclick="showas('as5')">5.从审核到下款的周期为多长？</div>
+        <div class="answer" id="as5" style="display: none">1-5天</div>
+    </div>
+    <div style="background-color: white;margin-top: 10px;color: #979797">
+        <div style="color: #ffbd6f;height: 45px;line-height: 45px;padding-left: 10px;font-size: 20px;margin-top: 10px">老鸟问题</div>
+        <div class="question" onclick="showas('as6')">1.新口子汇里哪些口子好撸？</div>
+        <div class="answer" id="as6" style="display: none">如果个人资质良好，任何口子都是好撸的。其次的话，可以尝试一些新口子。</div>
+        <div class="question" onclick="showas('as7')">2.如何保证个人贷款的通过率？</div>
+        <div class="answer" id="as7" style="display: none">首先，新口子建议你如实填写资料。然后可以同时申请几家。</div>
+        <div class="question" onclick="showas('as8')">3.影响贷款额度的主要因素有哪些？</div>
+        <div class="answer" id="as8" style="display: none">征信</div>
+        <div class="question" onclick="showas('as9')">4.如何顺利通过电话审核？</div>
+        <div class="answer" id="as9" style="display: none">1.保证填写信息的真实性。<br>
+            2.本人或填写的联系人通讯录保持通畅。<br>
+            3.回答内容和申请表填写的内容一致。</div>
+    </div>
+<script>
+    function showas(answer) {
+        sw=document.getElementById(answer);
+        if(sw.style.display=='block'){
+            sw.style.display='none'
+        }
+        else{
+            allsw=document.getElementsByClassName('answer');
+            for(i=0;i<allsw.length;i++){
+                allsw[i].style.display='none'
+            }
+            sw.style.display='block'
+        }
+    }
+</script>
+</body>
+</html>

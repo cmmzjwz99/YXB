@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cashier_choose"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="@dimen/text_size_20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_name"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:text="@string/item_name" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_type"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:text="@string/item_type" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_fees"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:text="@string/item_fees" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_lines"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:text="@string/item_lines" />
+    </LinearLayout>
+
+
+</LinearLayout>

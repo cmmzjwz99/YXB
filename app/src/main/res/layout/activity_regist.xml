@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:hint="@string/edit_phone"
+        style="@style/edit_styles"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bt_edit_bg_round"
+        android:layout_marginRight="@dimen/spacing_20"
+        android:layout_marginLeft="@dimen/spacing_20"
+        android:layout_marginTop="@dimen/spacing_10">
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/edit_code"
+            android:paddingLeft="@dimen/spacing_20"
+            android:textSize="@dimen/text_tittle"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/gray_999"/>
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/code"
+            android:textSize="@dimen/text_tittle"
+            android:textColor="@color/gray_666"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_password"
+        android:hint="@string/edit_six_password"
+        style="@style/edit_styles"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_confirm_password"
+        android:hint="@string/edit_confirm_password"
+        style="@style/edit_styles"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/spacing_15"
+        android:layout_marginLeft="@dimen/spacing_20"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/cb_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_5"
+            android:textColor="@color/gray_666"
+            android:textSize="@dimen/text_size"
+            android:text="@string/read_agreed" />
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_5"
+            android:textColor="@color/title_blue"
+            android:textSize="@dimen/text_size"
+            android:text="@string/agreement" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_regist"
+        android:layout_marginTop="30dp"
+        android:text="@string/bt_regist"
+        style="@style/bt_style"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/copy_right"
+        android:textColor="@color/gray_999"
+        android:textSize="@dimen/text_size"
+        android:gravity="center" />
+
+</LinearLayout>

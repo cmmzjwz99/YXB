@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/spacing_30"
+        style="@style/linear_layout">
+
+        <RelativeLayout
+            style="@style/relative_layout">
+
+            <TextView
+                android:id="@+id/tv_card_holder"
+                android:text="@string/have_card"
+                style="@style/text_style2" />
+
+            <EditText
+                android:id="@+id/et_card_holder"
+                android:layout_toRightOf="@+id/tv_card_holder"
+                android:hint="@string/edit_have_card"
+                android:maxLength="20"
+                style="@style/edit_style2"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line_margin_left_15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linear_layout">
+
+        <RelativeLayout
+            style="@style/relative_layout">
+
+            <TextView
+                android:id="@+id/tv_idCard"
+                android:text="@string/id_card"
+                style="@style/text_style2" />
+
+            <EditText
+                android:id="@+id/et_idCard"
+                android:layout_toRightOf="@+id/tv_idCard"
+                android:hint="@string/edit_id_card_no"
+                android:maxLength="18"
+                style="@style/edit_style2"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line_margin_left_15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linear_layout">
+
+        <RelativeLayout
+            style="@style/relative_layout">
+
+            <TextView
+                android:id="@+id/tv_bank"
+                android:text="@string/bank"
+                style="@style/text_style2" />
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_toRightOf="@+id/tv_bank"
+                android:hint="@string/bank_name"
+                style="@style/edit_style2"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line_margin_left_15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linear_layout">
+
+        <RelativeLayout
+            style="@style/relative_layout">
+
+            <TextView
+                android:id="@+id/tv_bank_no"
+                android:text="@string/bank_no"
+                style="@style/text_style2" />
+
+            <EditText
+                android:id="@+id/et_bank_no"
+                android:layout_toRightOf="@+id/tv_bank_no"
+                android:hint="@string/edit_bank_no"
+                android:inputType="number"
+                android:maxLength="20"
+                style="@style/edit_style2"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line_margin_left_15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linear_layout">
+
+        <RelativeLayout
+            style="@style/relative_layout">
+
+            <TextView
+                android:id="@+id/tv_reserved_phone"
+                android:text="@string/reserved_phone"
+                style="@style/text_style2" />
+
+            <EditText
+                android:id="@+id/et_reserved_phone"
+                android:layout_toRightOf="@+id/tv_reserved_phone"
+                android:hint="@string/edit_reserved_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                style="@style/edit_style2"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line_margin_left_15"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_marginTop="30dp"
+        android:text="@string/bt_confirm"
+        style="@style/bt_style"/>
+
+</LinearLayout>
